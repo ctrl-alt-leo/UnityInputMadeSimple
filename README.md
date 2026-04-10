@@ -1,8 +1,8 @@
-Unity Input Made Simple
+# Unity Input Made Simple
 
 Este pacote abstrai a complexidade do New Input System da Unity, oferecendo uma interface estática de alto desempenho, semelhante ao sistema antigo, mas com recursos modernos como suavização de input e suporte nativo a múltiplos dispositivos.
 
-🚀 Funcionalidades
+# Funcionalidades
 
     Acesso Global: Sem necessidade de referências manuais ou GetComponent.
 
@@ -10,50 +10,48 @@ Este pacote abstrai a complexidade do New Input System da Unity, oferecendo uma 
     
     Performance: Cache de dicionários e zero alocação de lixo (GC) no loop principal.
 
-📦 Instalação via Git (UPM)
+# Instalação via Git (UPM)
 
 Para instalar este sistema em seu projeto Unity usando o Package Manager:
 
-    No Unity, abra a janela Window > Package Manager.
+    1. No Unity, abra a janela Window > Package Manager.
+    2. Clique no botão + (mais) no canto superior esquerdo.
+    3. Selecione Add package from git URL....
+    4. Cole a URL deste repositório:
+       https://github.com/seu-usuario/nome-do-repositorio.git
+    5. Clique em Add.
 
-    Clique no botão + (mais) no canto superior esquerdo.
+* Certifique-se de ter o Git instalado em sua máquina para que o Unity possa clonar o pacote.
 
-    Selecione Add package from git URL....
+# Como Usar
 
-    Cole a URL deste repositório:
-    https://github.com/seu-usuario/nome-do-repositorio.git
+    1. Crie um GameObject chamado InputManager na sua primeira cena.
+    2. Arraste seu InputActionAsset para o campo Input Asset.
+    3. Selecione o Default Action Map no dropdown.
 
-    Clique em Add.
+# Exemplos de Código
 
-Certifique-se de ter o Git instalado em sua máquina para que o Unity possa clonar o pacote.
+    // 1. Botões Simples
+    if (InputManager.GetButtonDown("Jump")) {
+    }
 
-📖 Como Usar
-Configuração Inicial
+    if (InputManager.GetButtonUp("Jump")) {
+    }
 
-    Crie um GameObject chamado InputManager na sua primeira cena.
+    if (InputManager.GetButton("Sprint")) {
+    }
 
-    Arraste seu InputActionAsset para o campo Input Asset.
+    // 2. Vetores Digitais
+    Vector2 move = InputManager.GetVector2("Move");
+    Vector2 look = InputManager.GetVector2("Look");
 
-    Selecione o Default Action Map no dropdown.
+    // 3. Vetores Suavizados
+    Vector3 move = InputManager.GetVector2("Move", 0.1f);
+    Vector2 look = InputManager.GetVector2("Look", 0.1f);
 
-Exemplos de Código
-C#
+    // 4. Troca de Contexto (Mapa de Ação)
+    InputManager.SwitchActionMap("Driving");
 
-// 1. Botões Simples
-if (InputManager.GetButtonDown("Jump")) {
-    DoJump();
-}
-
-// 2. Vetores Digitais (WASD / Stick)
-Vector2 move = InputManager.GetVector2("Move");
-
-// 3. Vetores Suavizados (Ideal para Câmera FPS)
-// O valor 0.05f é o SmoothTime
-Vector2 look = InputManager.GetVector2("Look", 0.05f);
-
-// 4. Troca de Contexto (Mapa de Ação)
-InputManager.SwitchActionMap("Driving");
-
-⚖️ Licença
+# Licença
 
 Distribuído sob a Licença MIT. Veja LICENSE.md para mais informações.
