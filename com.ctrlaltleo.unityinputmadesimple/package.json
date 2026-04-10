@@ -1,0 +1,14 @@
+{
+  "name": "com.ctrlaltleo.unityinputmadesimple",
+  "version": "1.0.0",
+  "displayName": "Unity Input Made Simple",
+  "description": "Simplifying the New Input System. Classic workflow, modern power.",
+  "unity": "2021.3",
+  "author": {
+    "name": "Leonardo Oliveira",
+    "email": "leo.oliveira13@live.com"
+  },
+  "dependencies": {
+    "com.unity.inputsystem": "1.7.0"
+  }
+}
