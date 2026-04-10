@@ -18,7 +18,7 @@ Para instalar este sistema em seu projeto Unity usando o Package Manager:
     2. Clique no botão + (mais) no canto superior esquerdo.
     3. Selecione Add package from git URL....
     4. Cole a URL deste repositório:
-       https://github.com/seu-usuario/nome-do-repositorio.git
+       [https://github.com/ctrl-alt-leo/UnityInputMadeSimple.git](https://github.com/ctrl-alt-leo/UnityInputMadeSimple.git)
     5. Clique em Add.
 
 * Certifique-se de ter o Git instalado em sua máquina para que o Unity possa clonar o pacote.
