@@ -1,6 +1,6 @@
 # Unity Input Made Simple
 
-Este pacote abstrai a complexidade do New Input System da Unity, oferecendo uma interface estática de alto desempenho, semelhante ao sistema antigo, mas com recursos modernos como suavização de input e suporte nativo a múltiplos dispositivos.
+A ideia é tornar a utilização do Input System da Unity parecido com a versão antiga, sem complicações e sem comprometer performance.
 
 # Funcionalidades
 
@@ -18,7 +18,7 @@ Para instalar este sistema em seu projeto Unity usando o Package Manager:
     2. Clique no botão + (mais) no canto superior esquerdo.
     3. Selecione Add package from git URL....
     4. Cole a URL deste repositório:
-       [https://github.com/ctrl-alt-leo/UnityInputMadeSimple.git](https://github.com/ctrl-alt-leo/UnityInputMadeSimple.git)
+       https://github.com/ctrl-alt-leo/UnityInputMadeSimple.git
     5. Clique em Add.
 
 * Certifique-se de ter o Git instalado em sua máquina para que o Unity possa clonar o pacote.
